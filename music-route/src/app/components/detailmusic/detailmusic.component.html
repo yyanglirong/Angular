@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="wrap" *ngFor="let item of list">
+        <img class="title-pic" [src]="item.al.picUrl"/>
+        <span class="title">{{item.name}}</span>
+        <span class="ar">{{item.ar[0].name}}</span>
+    </div>
+</div>

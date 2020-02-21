@@ -1,0 +1,11 @@
+.title-pic{
+    height: 100px;
+    width: 80px;
+}
+.wrap{
+    display: flex;
+    margin-top: 20px;
+}
+.right p{
+    margin: 0;
+}

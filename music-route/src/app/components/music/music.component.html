@@ -1,0 +1,8 @@
+<div class="content">
+    <div class="wrap" *ngFor="let item of list">
+        <a [routerLink]="['/detailmusic']" [queryParams]="{id:item.id}">
+            <img class="pic" [src]="item.coverImgUrl"/>
+            <span>{{item.name}}</span>
+        </a>
+    </div>
+</div>

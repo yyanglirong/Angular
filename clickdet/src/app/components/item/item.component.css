@@ -1,0 +1,14 @@
+.item{
+    width: 150px;
+    height: 200px;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 150px;
+}

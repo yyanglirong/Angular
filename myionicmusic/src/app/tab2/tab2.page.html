@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      电影
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="wrap" *ngFor="let item of sub" [routerLink]="['/detailmovie',item.id]">
+      <img class="pic" [src]="item.images.small">
+      <p class="name">{{item.title}}</p>
+    </div>
+  </div>
+</ion-content>

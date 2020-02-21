@@ -1,0 +1,7 @@
+<div class="wrap" *ngFor="let item of sub">
+    <img class="title-pic" [src]="item.images.small">
+    <div class="right">
+        <p>{{item.title}}</p>
+        <P>类型：{{item.genres[0]}}</P>
+    </div>
+</div>

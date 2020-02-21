@@ -1,0 +1,34 @@
+<div>总价:${{sum()}}</div>
+<nz-table #basicTable [nzData]="dataSet">
+    <thead>
+      <tr>
+        <th><label nz-checkbox [(ngModel)]="checked" (change)="handleChange($event)">全选</label></th>
+        <th>商品</th>
+        <th>数量</th>
+        <th>价格</th>
+        <th>小计</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of list">
+        <td>
+          <label nz-checkbox (change)="onChange(data.isSelected)" [(ngModel)]="data.isSelected"></label>
+        </td>
+        <td>
+            <img [src] ="data.productCover">
+            <p>{{data.productName}}</p>
+        </td>
+        <td>
+          <nz-input-number [(ngModel)]="data.productCount" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
+        </td>
+        <td>${{data.productPrice}}元</td>
+        <td>
+          ${{sub(data.productCount,data.productPrice)}}元
+        </td>
+        <td>
+          <button nz-button nzType="danger" (click)="handleDelete(data)">删除</button>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>

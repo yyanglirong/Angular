@@ -1,0 +1,16 @@
+<p>定位：{{common.defaultCity}}</p>
+<button [routerLink]="['/city']">切换</button>
+<nz-carousel class="wrap" [nzEffect]="effect">
+    <div nz-carousel-content *ngFor="let item of img">
+        <img class="pic" [src]="item.images.small"/>
+    </div>
+</nz-carousel>
+<div class="nav">
+    <div>
+        <a [routerLink]="['comming']" routerLinkActive="router-link-active" >正在热映</a>
+    </div>
+    <div>
+        <a [routerLink]="['now']" routerLinkActive="router-link-active" >即将上映</a>
+    </div>
+</div>
+<router-outlet></router-outlet>

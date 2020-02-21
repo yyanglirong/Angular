@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="warp" *ngFor="let item of tracks">
+      <img class="pic" [src]="item.al.picUrl">
+      <div class="conent">
+        <p class="name">{{item.name}}</p>
+        <p class="name">{{item.ar[0].name}}</p>
+      </div>
+    </div>
+</ion-content>

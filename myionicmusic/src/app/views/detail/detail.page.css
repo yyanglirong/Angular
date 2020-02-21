@@ -1,0 +1,21 @@
+.pic {
+  width: 50px;
+  height: 50px;
+}
+
+.warp {
+  display: flex;
+  margin: 10px;
+}
+
+.name {
+  margin: 0;
+  font-size: 12px;
+}
+
+.conent {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -1,0 +1,27 @@
+[nz-carousel-content] {
+    text-align: center;
+    height: 100px;
+    line-height: 160px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+}
+.pic{
+    width: 370px;
+}
+.wrap{
+    width: 370px;
+    height: 200px;
+}
+.nav{
+    display: flex;
+    width: 370px;
+}
+.nav div{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+.router-link-active{
+    color: orange;
+}

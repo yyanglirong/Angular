@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      音乐
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="wrap" *ngFor="let item of list" [routerLink]="['/detail',item.id]">
+      <img class="pic" [src]="item.coverImgUrl">
+      <p class="name">{{item.name}}</p>
+    </div>
+  </div>
+</ion-content>
